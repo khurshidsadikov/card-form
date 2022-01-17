@@ -1,0 +1,157 @@
+.card__form{
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+    width: 100%;
+    background-color: #fff;
+    //transform: translateY(30%);
+    border-radius: 5px;
+}
+
+.card__left{
+    width: 30%;
+    padding: 40px;
+    background-color: #F2F2F2;
+}
+
+.box__text{
+    display: flex;
+    align-items: center;
+
+    &__title{
+        margin: 0;
+        margin-right: auto;
+        color: #0000008c;
+    }
+
+    &__link{
+        text-decoration: none;
+    }
+}
+
+.card{
+    margin-top: 30px;
+    padding: 10px;
+    display: block;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    background-color: #fff;
+    transition: all 0.15s ease-in-out;
+
+    &:hover{
+        box-shadow: 6px 6px 5px #a6a6a6;
+    }
+
+    &__img{
+        width: 80px;
+        height: 45px;
+    }
+}
+
+input:checked ~ .card{
+    border: 2px solid blue;
+}
+
+.card__right{
+    width: 70%;
+    padding: 40px;
+    background-color: #fff;
+}
+
+.box__text{
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+    padding-bottom: 30px;
+    border-bottom: 2px solid #909090;
+
+    &__title{
+        margin: 0;
+        margin-right: auto;
+        color: #0000008c;
+    }
+
+    &__number{
+        font-size: 28px;
+        font-weight: 900;
+
+        &--dataPay{
+            display: block;
+            font-size: 22px;
+            font-weight: 900;
+            margin-left: auto;
+            color: blue;
+        }
+    }
+}
+
+.data{
+    display: flex;
+    align-items: center;
+    padding: 16px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.15s ease-in-out;
+
+    &:hover{
+        background-color: #F2F2F2;
+        box-shadow: 6px 6px 5px #a6a6a6;
+    }
+
+    &__item{
+        display: block;
+        margin-right: 30px;
+        width: 30px;
+        height: 30px;
+        background: url("../../images/minus.svg") no-repeat;
+        background-size: cover;
+        border-radius: 50%;
+        border: 1px solid #909090;
+    }
+
+    &__select{
+
+        &__title{
+            margin: 0 0 5px 0;
+            font-size: 22px;
+            font-weight: 600;
+        }
+
+        &__type{
+            margin: 0;
+            font-size: 14px;
+        }
+    }
+}
+
+input:checked ~ .data__item{
+    width: 30px;
+    height: 30px;
+    background: url("../../images/plus.svg") no-repeat;
+    background-size: cover;
+}
+
+input:checked ~ .dataPay{
+    color: green;
+}
+
+.btn{
+    display: flex;
+    justify-content: flex-end;
+
+    &__submit{
+        padding: 8px;
+        margin: 50px 0 0 20px;
+        border: 1px solid #2d68eb;
+        border-radius: 12px;
+        color: #2d68eb;
+        cursor: pointer;
+        transition: all 0.15s ease-in-out;
+
+        &:hover{
+            color: #fff;
+            background-color: #2d68eb;
+        }
+    }
+}
